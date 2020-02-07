@@ -1,0 +1,89 @@
+#main-nav {
+  background-color: #9ccdfc;
+  display: flex; }
+  #main-nav ul {
+    width: 100%;
+    display: flex;
+    align-self: center; }
+    #main-nav ul:after {
+      content: "";
+      display: block;
+      clear: both; }
+  #main-nav li {
+    width: 20%;
+    display: flex; }
+  #main-nav a {
+    color: #032f3e;
+    text-decoration: none;
+    padding: 16px;
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    font-size: 20px; }
+    #main-nav a:hover {
+      background-color: #6bb4fb; }
+  #main-nav search-container {
+    display: flex; }
+  #main-nav input {
+    justify-content: center;
+    align-items: center;
+    padding: 6px;
+    font-size: 17px;
+    border: none;
+    align-self: center; }
+
+main {
+  flex-direction: column; }
+  main img {
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1%; }
+  main .box {
+    width: 25%;
+    height: 25%;
+    border: 3px solid rgba(3, 47, 62, 0.5);
+    align-items: center;
+    margin-bottom: 5%; }
+    main .box p {
+      font-family: 'Zhi Mang Xing', cursive;
+      margin: 5px;
+      padding: 5px; }
+  main article {
+    align-self: center; }
+  main .text {
+    width: 25%;
+    height: 25%;
+    border: 3px solid rgba(3, 47, 62, 0.5);
+    margin-bottom: 5%;
+    margin-top: 1%;
+    justify-content: center; }
+    main .text p {
+      font-family: 'Zhi Mang Xing', cursive;
+      margin: 5px;
+      padding: 5px; }
+  main hr {
+    border: solid;
+    color: #9ccdfc;
+    width: 25%;
+    margin-bottom: 2%; }
+  main h2 {
+    color: #032f3e;
+    align-self: center; }
+  main .hotel {
+    width: 40%;
+    height: 50%;
+    border: 3px solid rgba(3, 47, 62, 0.5);
+    float: left;
+    margin-right: 4%;
+    margin-bottom: 4%;
+    margin-left: 4%; }
+    main .hotel h3 {
+      font-family: 'Merriweather', serif; }
+    main .hotel p {
+      font-family: 'Zhi Mang Xing', cursive; }
+  main footer .font-container {
+    background-color: #9ccdfc;
+    width: auto;
+    height: 50px; }

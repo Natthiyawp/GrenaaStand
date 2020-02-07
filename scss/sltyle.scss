@@ -1,0 +1,174 @@
+@import "variables";
+
+@import "mixins";
+
+
+#main-nav {
+    background-color: $lightBlue;
+
+    display: flex;
+
+    ul {
+        width: 100%;
+
+        display: flex;
+
+        align-self: center;
+
+        @include clearFix;
+
+    }
+
+    li {
+        width: (100% / 5);
+
+        display: flex;
+        
+
+    }
+
+    a {
+        @include a;
+
+        &:hover {
+            background-color: darken($lightBlue, 10);
+
+        }
+
+    }
+
+    search-container {
+        display: flex;
+    }
+   
+    input {
+        
+        justify-content: center;
+
+        align-items: center;
+
+        padding: 6px;
+
+        font-size: 17px;
+
+        border: none;
+
+        align-self: center;
+
+    }
+
+}
+
+// end main-nav 
+
+ 
+main {
+   flex-direction: column;
+    
+    img {
+        width: 100%;
+
+        height: auto;
+
+        opacity: 0.8;
+
+        padding: 0;
+
+        margin: 0;
+
+        margin-bottom: 1%;
+
+    }
+
+    .box {
+        @include box;
+        
+        align-items: center;
+
+        margin-bottom: 5%;
+
+        p {
+            font-family: 'Zhi Mang Xing', cursive;
+
+            margin: 5px;
+
+            padding: 5px;
+
+        }
+    }
+
+    article {
+        align-self: center;
+    }
+
+    .text {
+        @include box;
+
+        margin-bottom: 5%;
+
+        margin-top: 1%;
+        
+        justify-content: center;
+
+        p {
+            font-family: 'Zhi Mang Xing', cursive;
+
+            margin: 5px;
+
+            padding: 5px;
+        }
+
+    }
+
+    hr {
+        border: solid;
+
+        color: $lightBlue;
+
+        width: 25%;
+
+        margin-bottom: 2%;
+
+    }
+
+    h2 {      
+        color: $deepBlue;
+
+        align-self: center;
+
+    }
+
+    .hotel {
+        width: 40%;
+
+        height: 50%;
+
+        border: 3px solid rgba($color: #032f3e, $alpha: 0.5s) ;
+
+        @include grid(3, 4%);
+
+        h3 {
+            font-family: 'Merriweather', serif;
+        }
+
+        p {
+            font-family: 'Zhi Mang Xing', cursive;
+        };
+
+    }
+
+    footer {
+
+        .font-container {
+            background-color: $lightBlue;
+
+            width: auto;
+
+            height: 50px;
+
+        }
+    }
+
+
+}
+
